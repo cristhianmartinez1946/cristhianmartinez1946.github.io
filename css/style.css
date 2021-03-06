@@ -1,0 +1,210 @@
+
+/* General */
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    color: #3f3f3f;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bolder;
+}
+
+#bloc_page{
+    width: 900px;
+    margin: auto;
+    border: 1px solid #3f3f3f;
+    word-wrap: break-word;
+}
+
+header, main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Colonne de droite */
+
+.right_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-left: 5%;
+}
+
+/* Header right_col  */
+
+#name{
+    margin-top: 40px;
+}
+
+#name > h1{
+    text-transform: uppercase;
+}
+
+#name > p{
+    font-size: larger;
+}
+
+#blue{
+    color: #19acdf;
+}
+
+#underline{
+    border-bottom: 0.5px solid #0b1214;
+}
+
+/* Colonne de gauche */
+
+.left_col{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #575656fb;
+    color: #ffffff;
+}
+
+/* Header left_col */
+
+#picture{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pictureOfMe{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    justify-content: center;
+}
+
+/* main right_col */
+
+.informations{
+    margin-right: 5%;
+}
+
+.informationsHead{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 0% 0 5% 0;
+}
+
+.informationsLogo, .logo{
+    color: #19acdf;
+    font-size: x-large;
+    width: 10%;
+}
+
+.sectionLogo{
+    color: #19acdf;
+    width: 10%;
+}
+
+.sectionLogoBold{
+    color: #19acdf;
+    width: 10%;
+    font-size: x-small;
+}
+
+.title{
+    text-transform: uppercase;
+    width: 90%;
+    font-weight: bold;
+}
+
+.line{
+    flex: 0.8;
+    border: 1px solid #19acdf;
+}
+
+.degree, .experiences, .recommandation{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.date, .content{
+    width: 50%;
+}
+
+.date{
+    font-weight: bold;
+}
+
+.content h3{
+    text-transform: uppercase;    
+}
+
+/* main left_col */
+
+#informations > h2, #hobby > h2, #about > h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+}
+
+#about{
+    flex: 1;
+}
+
+#about p{
+    padding: 10% 10% 0 10%;
+}
+
+#adress{
+    padding-top: 5%;
+}
+
+#website{
+    padding-bottom: 5%;
+}
+
+#adress, #phone, #email, #website{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10%;
+    margin: 10% 0 10% 0;
+}
+
+#adress p, #phone p, #email p, #website a{
+    padding-left: 20px;
+}
+
+#logoHobby{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.logoBorder{
+    border: 2px solid #010405;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+/* Responsive */
+
+@media all and (max-width: 768px){
+   #bloc_page{ width: auto; }
+   main,header{ flex-direction: column; margin-bottom: 2%;}
+   .left_col, .right_col{width: auto; margin-top: 2%;}
+   #name {text-align: center; padding-bottom: 5%;}
+   #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
+   #about p {padding: 5% 10% 5% 10%;}
+   .content {padding-right: 2%;}
+}
